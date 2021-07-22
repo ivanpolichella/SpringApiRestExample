@@ -1,4 +1,4 @@
-package com.ejemplo.springboot.app.productos.models.entity;
+package com.ejemplo.springboot.app.model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -18,6 +18,7 @@ public class Producto implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private Long id;
 	private String nombre;
 	private Double precio;
